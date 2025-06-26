@@ -1,17 +1,17 @@
 import React from "react";
 
 const frontendSkills = [
-  { name: "HTML", icon: "/assets/html-5.png" },
-  { name: "CSS", icon: "/assets/css-3.png" },
-  { name: "JavaScript", icon: "/assets/javascript.png" },
-  { name: "Bootstrap", icon: "/assets/bootstrap.png" },
-  { name: "React JS", icon: "/assets/react.png" },
+  { name: "HTML", image: "/assets/html-5_5968267.png" },
+  { name: "CSS", image: "/assets/css_919826.png" },
+  { name: "JavaScript", image: "/assets/icons8-javascript-48.png" },
+  { name: "Bootstrap", image: "/assets/icons8-bootstrap-48.png" },
+  { name: "React JS", image: "/assets/core-value_13101870.png" },
 ];
 
 const backendSkills = [
-  { name: "Node.js", icon: "/assets/nodejs.png" },
-  { name: "SQL", icon: "/assets/sql.png" },
-  { name: "Python", icon: "/assets/python.png" },
+  { name: "Node.js", image: "/assets/icons8-nodejs-48.png" },
+  { name: "SQL", image: "/assets/database_4248443.png" },
+  { name: "Python", image: "/assets/python_5968350.png" },
 ];
 
 function Skills() {
@@ -25,7 +25,7 @@ function Skills() {
             <div className="d-flex flex-wrap gap-4">
               {frontendSkills.map(skill => (
                 <div key={skill.name} className="text-center">
-                  <img src={skill.icon} alt={skill.name} style={{width: '48px', height: '48px'}} />
+                  <img src={skill.image} alt={skill.name} style={{width: '48px', height: '48px', objectFit: 'contain'}} />
                   <div style={{marginTop: '0.5rem', fontWeight: 500}}>{skill.name}</div>
                 </div>
               ))}
@@ -36,7 +36,7 @@ function Skills() {
             <div className="d-flex flex-wrap gap-4">
               {backendSkills.map(skill => (
                 <div key={skill.name} className="text-center">
-                  <img src={skill.icon} alt={skill.name} style={{width: '48px', height: '48px'}} />
+                  <img src={skill.image} alt={skill.name} style={{width: '48px', height: '48px', objectFit: 'contain'}} />
                   <div style={{marginTop: '0.5rem', fontWeight: 500}}>{skill.name}</div>
                 </div>
               ))}
